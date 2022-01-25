@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
 
 app.post('/api/fileanalyse', (req,res)=>{
   const {name,size,mimetype} = req.files.upfile
-  res.json({name,type:mimetypes,ize})
+  res.json({name,type:mimetype,size})
 })
 
 
